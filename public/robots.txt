@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dah-yekoumedji.org/sitemap.xml
