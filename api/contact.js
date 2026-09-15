@@ -27,7 +27,7 @@ export default async function handler(req, res) {
     `;
 
     const { data, error } = await resend.emails.send({
-      from: 'Contact Site Web <onboarding@resend.dev>',
+      from: process.env.RESEND_FROM_EMAIL || 'Contact Site Web <onboarding@resend.dev>',
       to: ['djegbokpa@gmail.com'],
       subject: `Nouveau Message de ${nom} - ${sujet || 'Demande de contact'}`,
       html: emailHtml,
